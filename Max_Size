@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+      <div class = "bg_container">
+          <div class = "card">
+              <h1 class = "heading">Start Musical Night</h1>
+              <div class = "main-container">
+                  <img src = "https://assets.ccbp.in/frontend/intermediate-rwd/musical-night-1-img.png" class = "img"/>
+                  <h1>Topic sentence: A paragraph should start with a topic sentence that presents the main idea</h1>
+                  <p>A paragraph is a group of sentences that discuss a single idea or topic. Paragraphs are a standard way to organize longer pieces of writing, and they help readers understand the structure of an essay and its main points</p>
+                  <div>
+                      <img src = "https://assets.ccbp.in/frontend/intermediate-rwd/musical-night-2-img.png" class = "finl_image"/>
+                      <img src = "https://assets.ccbp.in/frontend/intermediate-rwd/musical-night-3-img.png" class = "finl_image"/>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </body>
+</html>
+
+
+Css 
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+/* This will be covered in further sessions */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.bg_container{
+    background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/musical-night-bg.png");
+    height: 120vh;
+    background-size: cover;
+    padding: 5px;
+    
+}
+.heading{
+    padding-left: 10px;
+}
+.card{
+    
+    background-color: white;
+    width: 92%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 3px;
+    border-radius: 10px;
+}
+.main-container{
+    border-top: 2px solid lightgray;
+    padding: 10px;
+    height: 300px;
+    overflow-x: scroll;
+}
+.img{
+    width: 92%;
+    max-width: 800px;
+    padding: 3px;
+    
+}
+.finl_image{
+    width: 100px;
+    max-width: 800px;
+}
