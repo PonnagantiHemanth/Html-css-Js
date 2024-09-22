@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <div class="bg-container">
+        <div class="content_container">
+            <h1 class="heading">Travel Benifits</h1>
+            <p class="para">Traveling can help you feel calmer and more relaxed, and can improve your mental power.</p>
+        </div>
+        <div class="ttags">
+            <div class="tags">
+                <img src="https://assets.ccbp.in/frontend/intermediate-rwd/cheap-than-other-img.png" class="imgs" />
+                <h1 class="head">Cheap than Other</h1>
+                <p class="pp">Travelia is cheaper than any other Travels</p>
+            </div>
+            <div class="tags">
+                <img src="https://assets.ccbp.in/frontend/intermediate-rwd/cheap-than-other-img.png" class="imgs" />
+                <h1 class="head">Cheap than Other</h1>
+                <p class="pp">Travelia is cheaper than any other Travels</p>
+            </div>
+            <div class="tags">
+                <img src="https://assets.ccbp.in/frontend/intermediate-rwd/cheap-than-other-img.png" class="imgs" />
+                <h1 class="head">Cheap than Other</h1>
+                <p class="pp">Travelia is cheaper than any other Travels</p>
+            </div>
+            <div class="tags">
+                <img src="https://assets.ccbp.in/frontend/intermediate-rwd/cheap-than-other-img.png" class="imgs" />
+                <h1 class="head">Cheap than Other</h1>
+                <p class="pp">Travelia is cheaper than any other Travels</p>
+            </div>
+            <div class="tags">
+                <img src="https://assets.ccbp.in/frontend/intermediate-rwd/cheap-than-other-img.png" class="imgs" />
+                <h1 class="head">Cheap than Other</h1>
+                <p class="pp">Travelia is cheaper than any other Travels</p>
+            </div>
+            <div class="tags">
+                <img src="https://assets.ccbp.in/frontend/intermediate-rwd/cheap-than-other-img.png" class="imgs" />
+                <h1 class="head">Cheap than Other</h1>
+                <p class="pp">Travelia is cheaper than any other Travels</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+# Css
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.bg-container {
+    background-color: white;
+    padding: 10px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    color: #183b56;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 35px;
+}
+
+.para {
+    color: #183b56;
+    font-family: Roboto;
+    text-align: center;
+    
+}
+
+.content_container {
+    width: 90%;
+    margin-top: 5px;
+    max-width: 800px;
+
+}
+
+.imgs {
+    width: 80px;
+    height: 80px;
+}
+
+.tags {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 220px;
+}
+
+.head {
+    font-size: 10px;
+}
+
+.pp {
+    font-size: 18px;
+    text-align: center;
+    width: 90%;
+    max-width: 700px;
+}
+
+.ttags {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 85%;
+    max-width: 900px;
+}
