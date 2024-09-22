@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+      <div class = "container">
+          <div class = "content">
+              <h1 class = "heading">4.0 Technologies</h1>
+              <p>Technologies such as Industrial Internet of Things (IIoT), cloud connectivity, AI, and machine learning are now deeply woven into the manufacturing process.</p>
+              <ul class = "uls">
+                  <li class = "boxes">Test Foundations</li>
+                  <li class = "boxes">Html</li>
+                  <li class = "boxes">Css</li>
+                  <li class = "boxes">sql</li>
+                  <li class = "boxes">Js</li>
+                  <li class = "boxes">Test Foundations</li>
+                  <li class = "boxes">Html</li>
+                  <li class = "boxes">Css</li>
+                  <li class = "boxes">sql</li>
+                  <li class = "boxes">Js</li>
+              </ul>
+          </div>
+      </div>
+  </body>
+</html>
+
+# Css 
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+.container{
+    background-color: #222544;
+    height: 100vh;
+    background-size: cover;
+    padding: 8px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.heading{
+    color: #2d9cca;
+}
+.content{
+    width: 90%;
+    max-width: 800px;
+    margin: 10px;
+}
+.uls{
+    list-style-type: none;
+    display: flex;
+    padding-left: 0px;
+    flex-wrap: wrap;
+}
+
+.boxes{
+    border:2px solid #95cae0;
+    padding: 6px;
+    border-radius: 10px;
+    margin: 4px;
+}
+
+
