@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <div class="features_section">
+        <div class="bg_container">
+            <div class="holding_container">
+                <img src="https://assets.ccbp.in/frontend/intermediate-rwd/freemium-business-model-2-img.png" class="bulb" />
+                <div>
+                    <h1 class="heading k">Social Proof</h1>
+                    <p class="para pars2 k">As Customers,we buy products that make us feel good about ourselves,products that change us and make us better.</p>
+                </div>
+            </div>
+            <div class="holding_container border">
+                <img src="https://assets.ccbp.in/frontend/intermediate-rwd/freemium-business-model-1-img.png" class="bulb shrt" />
+                <div>
+                    <h1 class="heading">Social Proof</h1>
+                    <p class="para paras">We Provide a premium package to our Customers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+#Css 
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.bg_container {
+    background-color: #0b4870;
+    min-height: 100vh;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+}
+
+.bulb {
+    width: 28%;
+    max-width: 200px;
+    padding: 4px;
+    margin: 10px;
+
+}
+
+.heading {
+    color: white;
+    font-family: Roboto;
+    text-align: center;
+}
+
+.para {
+    color: white;
+    font-family: Roboto;
+    font-size: 18px;
+    text-align: center;
+}
+
+.holding_container {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.border {
+    border-top: 2px solid #f0f0f0;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .holding_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .bulb {
+        min-width: 30%;
+        max-width: 190px;
+        padding: 10px;
+        margin: 10px;
+        margin-left: 5px;
+
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .shrt {
+        order: 1;
+    }
+
+
+    .heading {
+        font-size: 60px;
+        text-align: start;
+        padding: 4px;
+    }
+
+    .para {
+        font-size: 40px;
+        padding: 5px;
+    }
+
+    .bg_container {
+        padding: 40px;
+    }
+}
+
+.features_section {
+    background-color: #eff7ff;
+    padding: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .paras {
+        text-align: left;
+    }
+
+    .pars2 {
+        text-align: right;
+    }
+
+    .k {
+        text-align: left;
+    }
+}
