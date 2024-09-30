@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <div class='bg-container'>
+        <nav class='navbar'>
+            <div class='insta'>
+                <img src='https://assets.ccbp.in/frontend/intermediate-rwd/instagram-story-viewer-logo.png' class='img' />
+                <p class='para'>Instagram</p>
+            </div>
+            <div class='content'>
+                <p class='padd'>Services</p>
+                <p class='padd'>Pricing</p>
+                <p class='padd'>Contact</p>
+                <p class='padd'>
+                    <i class="fa fa-search" style="font-size:20px"></i>
+                </p>
+
+            </div>
+            <div class='content-2'>
+                <i class="fa fa-search" style="font-size:29px"></i>
+            </div>
+        </nav>
+        <div class='contents'>
+            <h1 class='ins'>Instgram Story Viewer and Downloader</h1>
+            <p class='story'>Best Instagrm Story viewr! You can watch instagram stories anonymously and quickly without the need to log in</p>
+            <div class='inputbar'>
+                <div class='nn'>
+                    <input type='text' class='inpt' />
+                    <button class='butt'>Search</button>
+                </div>
+
+            </div>
+        </div>
+        <div class='box1'>
+            <div>
+                <img src='https://assets.ccbp.in/frontend/intermediate-rwd/no-account-img.png' class='imgar' />
+                <p class='arr'>No Need Instagram Account</p>
+            </div>
+            <div>
+                <img src='https://assets.ccbp.in/frontend/intermediate-rwd/anonymous-img.png' class='imgar' />
+                <p class='arr'>No Need Instagram Account</p>
+            </div>
+            <div>
+                <img src='https://assets.ccbp.in/frontend/intermediate-rwd/download-img.png' class='imgar' />
+                <p class='arr'>No Need Instagram Account</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+#Css 
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.bg-container {
+    background-image: linear-gradient(to right, #f54f5a, #f58529, #f64f59, #d267c4, #00ffff);
+    min-height: 300px;
+
+    color: white;
+}
+
+.img {
+    width: 50px;
+}
+
+.navbar {
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.insta {
+    display: flex;
+    align-items: center;
+}
+
+.para {
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.padd {
+    padding: 3px;
+}
+
+.content {
+    display: none;
+}
+
+.content-2 {
+    align-self: center;
+}
+
+.inputbar {
+    display: none;
+}
+
+.box1 {
+
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 756px) {
+    .content {
+        display: block;
+        display: flex;
+    }
+
+    .content-2 {
+        display: none;
+    }
+
+    .inputbar {
+        display: block;
+        margin: 10px;
+    }
+
+    .box1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .bg-container {
+        background-image: linear-gradient(to right, #f54f5a, #00ffff, #d267c4, #f64f59);
+    }
+}
+
+.ins {
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inpt {
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+}
+
+.story {
+    text-align: center;
+}
+
+.butt {
+    padding: 15px;
+    background-color: #3b82f6;
+    margin-left: 10px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    width: 50%;
+}
+
+.nn {
+    display: flex;
+}
+
+.arr {
+    color: black;
+    text-align: center;
+}
+
+.imgar {
+    width: 90px;
+    padding: 10px;
+    align-self: center;
+}
