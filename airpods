@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <div class='bg_container'>
+        <div class='ii'>
+            <img src='https://assets.ccbp.in/frontend/intermediate-rwd/apple-fairpods-img.png' class='img' />
+        </div>
+        <div class='content'>
+            <h1 class='head1'>MAGICALBUDS</h1>
+            <h1 class='head'>Magical runs in the family</h1>
+            <p class='para'>AirPods are wireless Bluetooth earbuds designed by Apple. They were first announced on September 7, 2016, alongside the iPhone 7. Within two years, they became Apple's most popular accessory. AirPods are the AirPods Pro and AirPods Max.</p>
+            <div>
+                <button class='button'>View More</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+#Css 
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.bg_container {
+    background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/fairpods-darkpink-bg.png");
+    min-height: 100vh;
+
+}
+
+.img {
+    width: 40%;
+    padding: 4px;
+    max-width: 150px;
+
+}
+
+.ii {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-self: center;
+}
+
+.head {
+    color: white;
+    font-size: 20px;
+    font-family: Roboto;
+}
+
+.head1 {
+    font-family: Roboto;
+    color: #8e62d9;
+    font-size: 17px;
+}
+
+.para {
+    color: #ffffff;
+    font-family: Roboto;
+    padding: 4px;
+}
+
+.button {
+    background-color: #ffdda9;
+    padding: 10px;
+    border-radius: 10px;
+    width: 40%;
+    max-width: 200px;
+}
+
+@media screen and (min-width: 768px) {
+    .bg_container {
+        background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/fairpods-blue-bg.png");
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .ii {
+        order: 1;
+    }
+
+    .content {
+        margin-left: 6px;
+    }
+
+    .head {
+        font-size: 60px;
+    }
+
+    .img {
+        width: 700px;
+        padding: 4px;
+        margin-right: 10px;
+    }
+
+    .para {
+        color: #ffffff;
+        font-family: Roboto;
+        padding: 4px;
+        font-size: 20px;
+    }
+}
