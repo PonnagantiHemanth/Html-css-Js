@@ -1,0 +1,65 @@
+let person = { name: "Rahul", age: 27 };
+let personDetails = { ...person, city: "Hyderabad" };
+
+console.log(personDetails);  // Object {name: "Rahul", age: 27, city: "Hyderabad"}
+
+ Creating a Copy
+
+let person = { name: "Rahul", age: 27 };
+let personDetails = { ...person };
+
+console.log(personDetails);  // Object {name: "Rahul", age: 27}
+
+
+Concatenation
+let person = { name: "Rahul", age: 27 };
+let address = { city: "Hyderabad", pincode: 500001 };
+let personDetails = { ...person, ...address };
+
+console.log(personDetails);  // Object {name: "Rahul", age: 27, city: "Hyderabad", pincode: 500001}
+
+Spread Operator with Function Calls
+
+function add(a, b, c) {
+  return a + b + c;
+}
+let numbers = [1, 2, 3, 4, 5];
+
+console.log(add(...numbers));  // 6
+
+Rest Parameter
+
+function numbers(...args) {
+  console.log(args);  // [1, 2, 3]
+}
+
+numbers(1, 2, 3);
+
+ Destructuring arrays and objects with Rest Parameter Syntax
+
+let [a, b, ...rest] = [1, 2, 3, 4, 5];
+
+console.log(a);  // 1
+console.log(b);  // 2
+console.log(rest);  // [3, 4, 5]
+objects
+let { firstName, ...rest } = {
+  firstName: "Rahul",
+  lastName: "Attuluri",
+  age: 27
+};
+
+console.log(firstName);  // Rahul
+console.log(rest);  // Object {lastName: "Attuluri", age: 27}
+
+
+function numbers(a = 2, b = 5) {
+  console.log(a);  // 3
+  console.log(b);  // 5
+}
+Default Parameters
+numbers(3);
+
+let firstName = "Rahul";
+
+console.log(`Hello ${firstName}!`);  // Hello Rahul!
