@@ -1,0 +1,178 @@
+Ternary Operator
+
+let speed = 70;
+let message = speed >= 100 ? "Too Fast" : "OK";
+
+console.log(message);  // OK
+
+
+2. Conditional Statements
+2.1 Switch Statement
+A Switch statement is a conditional statement like if...else statement used in decision making.
+
+
+
+let day = 1;
+switch (day) {
+  case 0:
+    console.log("Sunday");
+    break;
+  case 1:
+    console.log("Monday");  // Monday
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  case 4:
+    console.log("Thursday");
+    break;
+  case 5:
+    console.log("Friday");
+    break;
+  case 6:
+    console.log("Saturday");
+    break;
+  default:
+    console.log("Invalid");
+    break;
+}
+Arrow Functions
+
+let sum = (a, b) => {
+  let result = a + b;
+  return result;
+};
+console.log(sum(4, 3));
+Simple Expressions
+let add = (a,b) => a+b
+console.log(add(1,2))
+One parameter
+let greet = name => `Hi ${name}!`;
+
+console.log(greet("Rahul"));  // Hi Rahul!
+
+let greet = name => `Hello ${name}`
+console.log(greet("sai"))
+
+
+let greet = () => "Hello sai";
+console.log(greet())
+
+let user = name => {
+    return {
+        first_name : `Hello ${name}`,
+    }
+}
+console.log(user("sai"))
+
+
+Factory Function
+
+function addColor (color,brand){
+    return {
+        color: color,
+        brand: brand,
+        start : function(){
+            console.log("wStart Function")
+        }
+    }
+}
+
+let ob1 = addColor("pink","Bmw")
+ob1.start()
+
+Shorthand Notations
+function addColor(color,brand) {
+    return {
+        color,
+        brand,
+        start(){
+            console.log("Start Function")
+        }
+    }
+}
+let ob1 = addColor("bmw",'red');
+console.log(ob1)
+ob1.start()
+
+
+Constructor Function
+
+
+function con(brand,color){
+    this.color = color;
+    this.brand = brand;
+    this.start = function(){
+        console.log("Start Function")
+    }
+}
+let ob1 = new con("bmw",'white')
+console.log(ob1)
+ob1.start()
+
+
+
+The name Property
+
+function Car(color,brand){
+    this.color = color;
+    this.brand = brand;
+    this.start = function(){
+        console.log("Start Function");
+    }
+}
+console.log(Car.name)
+
+The typeof function
+function Car(color,brand){
+    this.color = color;
+    this.brand = brand;
+    this.start = function(){
+        console.log("Start Function");
+    }
+}
+console.log(typeof(Car))
+
+
+
+The Constructor Property
+function Car(color,brand){
+    this.color = color;
+    this.brand = brand;
+    this.start = function(){
+        console.log("Start Function");
+    }
+}
+let ob1 = new Car("red","Bmw")
+console.log(ob1.constructor)
+
+
+let date = new Date(0)
+console.log(date)
+
+
+let date = new Date ("2024-10")
+console.log(date)
+
+
+let date = new Date ("2024")
+console.log(date)
+
+let date = new Date("10/09/2024")
+console.log(date)
+
+packing and unpacking
+function Numbers(...numbers){
+    console.log(numbers)
+    let pro = 1;
+    for (let i of numbers){
+        pro = pro* i;
+    }
+    return pro
+}
+let arr = [1,2,3];
+
+console.log(Numbers(...arr))
