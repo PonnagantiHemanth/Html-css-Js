@@ -1,0 +1,27 @@
+constructor
+
+function Person(firstname,second){
+    this.firstname = firstname;
+    this.second = second;
+}
+Person.prototype.getFullName = function(){
+    return this.firstname + ' ' + this.second; 
+};
+let v1 =new Person("sai",'ravi');
+console.log(v1.getFullName())
+
+
+Class 
+
+class Myclass {
+    constructor (firstname,secondname){
+        this.firstname = firstname;
+        this.secondname = secondname;
+    }
+    getFullName () {
+        return this.firstname + ' ' + this.secondname;
+    }
+}
+
+let v1 =new Myclass('sai','chandu');
+console.log(v1.getFullName());
