@@ -1,0 +1,15 @@
+class Myclass {
+    constructor (firstname,secondname){
+        this.firstname = firstname;
+        this.secondname = secondname;
+    }
+    getFullName () {
+        return this.firstname + ' ' + this.secondname;
+    }
+}
+
+let v1 =new Myclass('sai','chandu');
+let v2 = new Myclass("sd",'sd')
+console.log(v1)
+console.log(typeof(Myclass));
+console.log(typeof(v1));
