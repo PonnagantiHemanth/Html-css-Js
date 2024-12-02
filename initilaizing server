@@ -1,0 +1,32 @@
+const express = require('express')
+const app = express()
+const path = require('path')
+const {open} = require('sqlite')
+const sqlite3 = require('sqlite3')
+let db = null
+const dbpath = path.join(__dirname, 'goodreads.db')
+const initilizationserver = async () => {
+  try {
+    db = await open({
+      filename: dbpath,
+      driver: sqlite3.Database,
+    })
+    app.listen(3000, () => {
+      console.log('server running ')
+    })
+  } catch (error) {
+    console.log(error.message)
+    process.exit(1)
+  }
+}
+initilizationserver()
+app.get('/books/', async (request, response) => {
+  const sqlquery = `
+    SELECT 
+    * 
+    FROM 
+    book
+    `
+  const res = await db.all(sqlquery)
+  response.send(res)
+})
